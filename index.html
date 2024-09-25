@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PipBoy Weather</title>
+  </head>
+  <body>
+    <div id="loader" class="full-screen scanline-effect old-crt-monitor">
+      <img src="imgs/fallout_boy_transparent.gif">
+      <h1>Loading...</h1>
+    </div>
+    <div class="retro-container scanline-effect old-crt-monitor">
+      <header>
+        <nav class="mask">
+          <ul>
+            <li><a href="#screen-1">Verdal</a></li>
+            <li><a href="#screen-2">Brasília</a></li>
+            <li><a href="#screen-3">Tokyo</a></li>
+            <li><a href="#screen-4">London</a></li>
+            <li><a href="#screen-5">Madrid</a></li>
+          </ul>
+          <form id="form" class="form">
+            <label for="search">Search:</label><br />
+            <input type="text" id="search" class="input-field" />
+            <input
+              type="submit"
+              value="Submit"
+              class="button"
+              href="#screen-6"
+            />
+          </form>
+        </nav>
+      </header>
+      <main class="mask">
+        <section id="screen-1">
+          <article>
+            <div class="weather-container">
+              <div class="content"></div>
+              <img
+                class="mask neon-green-shadow"
+                src="imgs/fingerguns.png"
+                
+                style="width: 300px; height: 300px;"
+              />
+            </div>
+          </article>
+        </section>
+
+        <section id="screen-2">
+          <article>
+
+            <div class="weather-container">
+              <div class="content"></div>
+              <img
+                class="mask turn-white-neon-green"
+                src="imgs/burning.webp"
+                style="width: 300px; height: 300px;"
+              />
+          </article>
+        </section>
+
+        <section id="screen-3">
+          <article>
+
+            <div class="weather-container">
+              <div class="content"></div>
+              <img
+                class="neon-green-shadow mask"
+                src="imgs/Vault-TecVaultBoy.png"
+                style="width: 300px; height: 300px;"
+              />
+          </article>
+        </section>
+
+        <section id="screen-4">
+          <article>
+            <div class="weather-container">
+              <div class="content"></div>
+              <img
+                class="turn-white-neon-green mask"
+                src="imgs/SurvivalistFNV.webp"
+                style="width: 300px;"
+              />
+          </article>
+        </section>
+
+        <section id="screen-5">
+          <article>
+            <div class="weather-container">
+              <div class="content"></div>
+              <img
+              class="turn-white-neon-green mask"
+                src="imgs/PhoenixArmorImplants.webp"
+                style="width: 300px; "
+              />
+          </article>
+        </section>
+
+        <section id="screen-6">
+          <article>
+            <div class="weather-container">
+              <div class="content">
+
+                <h1>MAKE A SEARCH</h1>
+              </div>
+              <img
+                class="turn-white-neon-green mask"
+                src="imgs/Vault_Boy.webp"
+                style="height: 300px"
+              />
+          </article>
+        </section>
+      </main>
+      <footer class="mask">
+        <a href="https://github.com/Kim3n">Made by Kim3n</a>
+      </footer>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
